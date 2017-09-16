@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: "dev"
+  application:
+    name: jooq-madhan
+    
+server:
+  context-path: /jooq-madhan
+  port: 8083
+       
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+---
+spring:
+  profiles: default
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jooqschema
+    
+---
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jooqschema
+    
+
+  
