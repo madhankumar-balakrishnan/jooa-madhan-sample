@@ -4,11 +4,15 @@ spring:
     
   cloud:
     vault:
-      host: 192.168.1.4
+      host: madhankumarbalakrishnan-VirtualBox
+      port: 8200    
       authentication: APPROLE
       app-role:
-        role-id: a888711b-da39-b0ac-aa29-2366972d1bfa
-        secret-id: 005a05b8-35fe-9139-c568-690e0e2970b0
-      scheme: http
+        role-id: 10a11d03-6a72-ce75-b580-91210117457b
+        secret-id: efdad21b-89b9-083d-d619-d66ab62ca493
+      scheme: https
+      ssl:
+        trust-store: classpath:keystore.jks
+        trust-store-password: changeit
   config:
     enabled: true
