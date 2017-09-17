@@ -4,11 +4,11 @@ spring:
     
   cloud:
     vault:
-      host: 192.168.1.3
+      host: 192.168.1.4
       authentication: APPROLE
       app-role:
-        role-id: a840243c-d0a4-aeaf-d219-63a6bb960062
-        secret-id: 74d55404-3a88-19a6-f857-63f58794b73a
+        role-id: a888711b-da39-b0ac-aa29-2366972d1bfa
+        secret-id: 005a05b8-35fe-9139-c568-690e0e2970b0
       scheme: http
   config:
     enabled: true

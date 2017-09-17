@@ -50,6 +50,7 @@ public class Keys {
     // -------------------------------------------------------------------------
 
     public static final ForeignKey<AuthorBookRecord, AuthorRecord> FK_AB_AUTHOR = ForeignKeys0.FK_AB_AUTHOR;
+    public static final ForeignKey<AuthorBookRecord, BookRecord> FK_AB_BOOK = ForeignKeys0.FK_AB_BOOK;
 
     // -------------------------------------------------------------------------
     // [#1459] distribute members to avoid static initialisers > 64kb
@@ -63,5 +64,6 @@ public class Keys {
 
     private static class ForeignKeys0 extends AbstractKeys {
         public static final ForeignKey<AuthorBookRecord, AuthorRecord> FK_AB_AUTHOR = createForeignKey(com.jooq.madhan.sample.domain.Keys.KEY_AUTHOR_PRIMARY, AuthorBook.AUTHOR_BOOK, "fk_ab_author", AuthorBook.AUTHOR_BOOK.AUTHOR_ID);
+        public static final ForeignKey<AuthorBookRecord, BookRecord> FK_AB_BOOK = createForeignKey(com.jooq.madhan.sample.domain.Keys.KEY_BOOK_PRIMARY, AuthorBook.AUTHOR_BOOK, "fk_ab_book", AuthorBook.AUTHOR_BOOK.BOOK_ID);
     }
 }

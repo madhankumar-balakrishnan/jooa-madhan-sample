@@ -35,7 +35,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AuthorBook extends TableImpl<AuthorBookRecord> {
 
-    private static final long serialVersionUID = -412065925;
+    private static final long serialVersionUID = -536943970;
 
     /**
      * The reference instance of <code>jooqschema.author_book</code>
@@ -111,7 +111,7 @@ public class AuthorBook extends TableImpl<AuthorBookRecord> {
      */
     @Override
     public List<ForeignKey<AuthorBookRecord, ?>> getReferences() {
-        return Arrays.<ForeignKey<AuthorBookRecord, ?>>asList(Keys.FK_AB_AUTHOR);
+        return Arrays.<ForeignKey<AuthorBookRecord, ?>>asList(Keys.FK_AB_AUTHOR, Keys.FK_AB_BOOK);
     }
 
     /**
