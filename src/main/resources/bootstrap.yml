@@ -1,7 +1,6 @@
 spring:
   application:
     name: jooq-madhan
-    
   cloud:
     vault:
       host: madhankumarbalakrishnan-VirtualBox

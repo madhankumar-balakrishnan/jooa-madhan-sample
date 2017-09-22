@@ -19,7 +19,7 @@ import com.jooq.madhan.sample.model.BookModel;
 import com.jooq.madhan.sample.service.BooksService;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v1/jooq-madhan")
 public class BookController {
 
 	public static final Logger logger = LoggerFactory.getLogger(BookController.class);

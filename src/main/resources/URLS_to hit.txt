@@ -1,1 +1,1 @@
-http://localhost:8083/jooq-madhan/v1/books
+http://localhost:8083/v1/jooq-madhan/books

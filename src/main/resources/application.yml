@@ -1,11 +1,8 @@
 spring:
   profiles:
     active: "dev"
-  application:
-    name: jooq-madhan
     
 server:
-  context-path: /jooq-madhan
   port: 8083
        
 eureka:
