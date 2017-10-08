@@ -7,6 +7,7 @@ package com.jooq.madhan.sample.domain;
 import com.jooq.madhan.sample.domain.tables.Author;
 import com.jooq.madhan.sample.domain.tables.AuthorBook;
 import com.jooq.madhan.sample.domain.tables.Book;
+import com.jooq.madhan.sample.domain.tables.RevenueDetailJobParameters;
 
 import javax.annotation.Generated;
 
@@ -38,4 +39,9 @@ public class Tables {
      * The table <code>jooqschema.book</code>.
      */
     public static final Book BOOK = com.jooq.madhan.sample.domain.tables.Book.BOOK;
+
+    /**
+     * The table <code>jooqschema.revenue_detail_job_parameters</code>.
+     */
+    public static final RevenueDetailJobParameters REVENUE_DETAIL_JOB_PARAMETERS = com.jooq.madhan.sample.domain.tables.RevenueDetailJobParameters.REVENUE_DETAIL_JOB_PARAMETERS;
 }
