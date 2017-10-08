@@ -7,9 +7,11 @@ package com.jooq.madhan.sample.domain;
 import com.jooq.madhan.sample.domain.tables.Author;
 import com.jooq.madhan.sample.domain.tables.AuthorBook;
 import com.jooq.madhan.sample.domain.tables.Book;
+import com.jooq.madhan.sample.domain.tables.RevenueDetailJobParameters;
 import com.jooq.madhan.sample.domain.tables.records.AuthorBookRecord;
 import com.jooq.madhan.sample.domain.tables.records.AuthorRecord;
 import com.jooq.madhan.sample.domain.tables.records.BookRecord;
+import com.jooq.madhan.sample.domain.tables.records.RevenueDetailJobParametersRecord;
 
 import javax.annotation.Generated;
 
@@ -44,6 +46,7 @@ public class Keys {
     public static final UniqueKey<AuthorRecord> KEY_AUTHOR_PRIMARY = UniqueKeys0.KEY_AUTHOR_PRIMARY;
     public static final UniqueKey<AuthorBookRecord> KEY_AUTHOR_BOOK_PRIMARY = UniqueKeys0.KEY_AUTHOR_BOOK_PRIMARY;
     public static final UniqueKey<BookRecord> KEY_BOOK_PRIMARY = UniqueKeys0.KEY_BOOK_PRIMARY;
+    public static final UniqueKey<RevenueDetailJobParametersRecord> KEY_REVENUE_DETAIL_JOB_PARAMETERS_PRIMARY = UniqueKeys0.KEY_REVENUE_DETAIL_JOB_PARAMETERS_PRIMARY;
 
     // -------------------------------------------------------------------------
     // FOREIGN KEY definitions
@@ -60,6 +63,7 @@ public class Keys {
         public static final UniqueKey<AuthorRecord> KEY_AUTHOR_PRIMARY = createUniqueKey(Author.AUTHOR, "KEY_author_PRIMARY", Author.AUTHOR.ID);
         public static final UniqueKey<AuthorBookRecord> KEY_AUTHOR_BOOK_PRIMARY = createUniqueKey(AuthorBook.AUTHOR_BOOK, "KEY_author_book_PRIMARY", AuthorBook.AUTHOR_BOOK.AUTHOR_ID, AuthorBook.AUTHOR_BOOK.BOOK_ID);
         public static final UniqueKey<BookRecord> KEY_BOOK_PRIMARY = createUniqueKey(Book.BOOK, "KEY_book_PRIMARY", Book.BOOK.ID);
+        public static final UniqueKey<RevenueDetailJobParametersRecord> KEY_REVENUE_DETAIL_JOB_PARAMETERS_PRIMARY = createUniqueKey(RevenueDetailJobParameters.REVENUE_DETAIL_JOB_PARAMETERS, "KEY_revenue_detail_job_parameters_PRIMARY", RevenueDetailJobParameters.REVENUE_DETAIL_JOB_PARAMETERS.ID);
     }
 
     private static class ForeignKeys0 extends AbstractKeys {

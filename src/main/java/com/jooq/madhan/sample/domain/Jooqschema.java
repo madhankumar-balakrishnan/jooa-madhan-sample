@@ -7,6 +7,7 @@ package com.jooq.madhan.sample.domain;
 import com.jooq.madhan.sample.domain.tables.Author;
 import com.jooq.madhan.sample.domain.tables.AuthorBook;
 import com.jooq.madhan.sample.domain.tables.Book;
+import com.jooq.madhan.sample.domain.tables.RevenueDetailJobParameters;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,7 +33,7 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Jooqschema extends SchemaImpl {
 
-    private static final long serialVersionUID = 1774444939;
+    private static final long serialVersionUID = -345613286;
 
     /**
      * The reference instance of <code>jooqschema</code>
@@ -53,6 +54,11 @@ public class Jooqschema extends SchemaImpl {
      * The table <code>jooqschema.book</code>.
      */
     public final Book BOOK = com.jooq.madhan.sample.domain.tables.Book.BOOK;
+
+    /**
+     * The table <code>jooqschema.revenue_detail_job_parameters</code>.
+     */
+    public final RevenueDetailJobParameters REVENUE_DETAIL_JOB_PARAMETERS = com.jooq.madhan.sample.domain.tables.RevenueDetailJobParameters.REVENUE_DETAIL_JOB_PARAMETERS;
 
     /**
      * No further instances allowed
@@ -81,6 +87,7 @@ public class Jooqschema extends SchemaImpl {
         return Arrays.<Table<?>>asList(
             Author.AUTHOR,
             AuthorBook.AUTHOR_BOOK,
-            Book.BOOK);
+            Book.BOOK,
+            RevenueDetailJobParameters.REVENUE_DETAIL_JOB_PARAMETERS);
     }
 }
